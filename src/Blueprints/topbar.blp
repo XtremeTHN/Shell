@@ -1,0 +1,22 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ComponentsTopBar : Adw.Window {
+    styles [
+        "topbar"
+    ]
+    
+    content: Gtk.CenterBox {
+        start-widget: Gtk.Box workspaces {};
+        center-widget: Gtk.Label date_and_time {};
+        end-widget: Gtk.Box {
+            orientation: horizontal;
+
+            Gtk.Image battery_icon {
+                icon-name: "battery-missing-symbolic";
+            }
+
+            Gtk.Label battery_percent {}
+        };
+    };
+}

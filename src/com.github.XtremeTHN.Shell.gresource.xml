@@ -1,0 +1,7 @@
+<gresources>
+    <gresource prefix="/com/github/XtremeTHN/Shell">
+        <file alias="style.css">styles/style.css</file>
+
+        <file alias="topbar.ui">Blueprints/topbar.ui</file>
+    </gresource>
+</gresources>
